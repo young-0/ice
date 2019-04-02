@@ -97,10 +97,10 @@ public class AwsUtils {
         securityClient = new AWSSecurityTokenServiceClient(awsCredentialsProvider, clientConfig);
         if (System.getProperty("EC2_REGION") != null && !"us-east-1".equals(System.getProperty("EC2_REGION"))) {
             if ("global".equals(System.getProperty("EC2_REGION"))) {
-                s3Client.setEndpoint("s3.amazonaws.com");
+                s3Client.setEndpoint("s3.cn-northwest-1.amazonaws.com.cn");
             }
             else {
-                s3Client.setEndpoint("s3-" + System.getProperty("EC2_REGION") + ".amazonaws.com");
+                s3Client.setEndpoint("s3.cn-northwest-1.amazonaws.com.cn");
             }
         }
     }
@@ -273,7 +273,7 @@ public class AwsUtils {
             }
 
             if(bucketFileRegion != null && !bucketFileRegion.isEmpty()) {
-                s3Client.setEndpoint("s3-" + bucketFileRegion + ".amazonaws.com");
+                s3Client.setEndpoint("s3.cn-northwest-1.amazonaws.com.cn");
             }
 
             ObjectMetadata metadata = s3Client.getObjectMetadata(bucketName, bucketFilePrefix + file.getName());
