@@ -152,6 +152,7 @@ public class BasicReservationService extends Poller implements ReservationServic
                 continue;
             }
             ec2Client.setEndpoint("ec2.cn-northwest-1.amazonaws.com.cn");
+            logger.info("describeRegions is : " + ec2Client.describeRegions() + "\n")
             do {
                 if (!StringUtils.isEmpty(token))
                     req.setNextToken(token);
