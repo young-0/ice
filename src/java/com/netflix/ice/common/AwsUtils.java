@@ -94,7 +94,7 @@ public class AwsUtils {
             clientConfig.setProxyPort(Integer.parseInt(proxyPort));
         }
         s3Client = new AmazonS3Client(awsCredentialsProvider, clientConfig);
-        System.out.printf("%s%n%s%n", s3Client.getRegion(), s3Client.getRegionName());
+        logger.info(("%s%n%s%n", s3Client.getEndpointPrefix(), s3Client.getRegionName()));
         securityClient = new AWSSecurityTokenServiceClient(awsCredentialsProvider, clientConfig);
         if (System.getProperty("EC2_REGION") != null && !"us-east-1".equals(System.getProperty("EC2_REGION"))) {
             if ("global".equals(System.getProperty("EC2_REGION"))) {
