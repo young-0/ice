@@ -87,6 +87,10 @@ public class Zone extends Tag {
     public static final Zone AP_SOUTHEAST_2B = new Zone(Region.AP_SOUTHEAST_2, "ap-southeast-2b");
     public static final Zone AP_SOUTHEAST_2C = new Zone(Region.AP_SOUTHEAST_2, "ap-southeast-2c");
 
+    public static final Zone CN_NORTHWEST_1A = new Zone(Region.CN_NORTHWEST_1, "cn-northwest-1a");
+    public static final Zone CN_NORTHWEST_1B = new Zone(Region.CN_NORTHWEST_1, "cn-northwest-1b");
+    public static final Zone CN_NORTHWEST_1C = new Zone(Region.CN_NORTHWEST_1, "cn-northwest-1c");
+    
     public static final Zone AP_SOUTH_1A = new Zone(Region.AP_SOUTH_1, "ap-south-1a");
     public static final Zone AP_SOUTH_1B = new Zone(Region.AP_SOUTH_1, "ap-south-1b");
 
@@ -145,6 +149,10 @@ public class Zone extends Tag {
         zonesByName.put(AP_SOUTHEAST_1B.name, AP_SOUTHEAST_1B);
         zonesByName.put(AP_SOUTHEAST_1C.name, AP_SOUTHEAST_1C);
 
+        zonesByName.put(CN_NORTHWEST_1A.name, CN_NORTHWEST_1A);
+        zonesByName.put(CN_NORTHWEST_1B.name, CN_NORTHWEST_1B);
+        zonesByName.put(CN_NORTHWEST_1C.name, CN_NORTHWEST_1C);
+        
         zonesByName.put(AP_SOUTHEAST_2A.name, AP_SOUTHEAST_2A);
         zonesByName.put(AP_SOUTHEAST_2B.name, AP_SOUTHEAST_2B);
         zonesByName.put(AP_SOUTHEAST_2C.name, AP_SOUTHEAST_2C);
