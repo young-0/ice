@@ -104,7 +104,7 @@ public class AwsUtils {
             }
         }
         s3Client.setEndpoint("s3.cn-northwest-1.amazonaws.com.cn");
-        logger.info(s3Client.getEndpointPrefix() + "\n" + s3Client.getRegionName() + "\n");
+        logger.info("RegionName is :" + s3Client.getRegionName() + "\n");
         
     }
 
